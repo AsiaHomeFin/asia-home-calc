@@ -598,7 +598,7 @@ async function handlePDF(input) {
   headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
           model: 'claude-sonnet-4-6',
-          max_tokens: 4000,
+          max_tokens: 8000,
           messages: [{
             role: 'user',
             content: [
@@ -628,7 +628,7 @@ async function handlePDF(input) {
 - ХДФ: 1 лист на каждые 2-3 листа ЛДСП
 - Для кухни: много навесов (до 81 шт на большую), подсветка обязательна
 
-Верни ТОЛЬКО JSON массив объектов, без пояснений, без markdown.` }
+Максимум 15 изделий — только самые крупные и значимые. Не включай мелкие элементы типа полок и тумбочек если они часть большого изделия. Верни ТОЛЬКО JSON массив объектов, без пояснений, без markdown.` }
             ]
           }]
         })
