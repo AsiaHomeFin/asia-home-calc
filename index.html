@@ -635,7 +635,11 @@ async function handlePDF(input) {
       });
 
       const data = await response.json();
-      const text = data.content[0].text;
+console.log('API response:', JSON.stringify(data));
+if (!data.content || !data.content[0]) {
+  throw new Error('Нет ответа от Claude: ' + JSON.stringify(data));
+}
+const text = data.content[0].text;
       const clean = text.replace(/```json|```/g,'').trim();
       const parsed = JSON.parse(clean);
 
