@@ -179,7 +179,8 @@ tr:hover td{background:rgba(255,255,255,.02)}
 // ─── CONFIG ──────────────────────────────────────────────────────────────────
 const SUPA_URL = 'https://pdubjnovmbuzdgajwxpp.supabase.co';
 const SUPA_KEY = 'sb_publishable_BXQUtVD_43VzvJSYxKMgIg_UdpSOQlO';
-const CLAUDE_KEY = ''; // Заполнить после получения ключа
+const CLAUDE_KEY = '';
+const PROXY_URL = 'https://asia-home-proxy.fkirill92.workers.dev';
 
 // ─── PRICES ──────────────────────────────────────────────────────────────────
 const P = {
@@ -592,9 +593,9 @@ async function handlePDF(input) {
     document.getElementById('aiText').textContent = 'Анализирую планировки и мебель...';
 
     try {
-      const response = await fetch('https://api.anthropic.com/v1/messages', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
+      const response = await fetch(PROXY_URL, {
+  method: 'POST',
+  headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
           model: 'claude-sonnet-4-20250514',
           max_tokens: 4000,
