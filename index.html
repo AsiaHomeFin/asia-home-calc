@@ -957,13 +957,17 @@ async function exportPDF() {
 
   const fontUrl = 'https://fonts.gstatic.com/s/notosans/v36/o-0IIpQlx3QUlC5A4PNjThZVZNyBx2pqPIif.woff2';
   try {
-    const fontResp = await fetch(fontUrl);
-    const fontBuf = await fontResp.arrayBuffer();
-    const fontB64 = btoa(String.fromCharCode(...new Uint8Array(fontBuf)));
-    doc.addFileToVFS('NotoSans.ttf', fontB64);
-    doc.addFont('NotoSans.ttf', 'NotoSans', 'normal');
-    doc.setFont('NotoSans');
-  } catch(e) { doc.setFont('helvetica'); }
+    const fontResp = await fetch('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+    const css = await fontResp.text();
+    const woffUrl = css.match(/url\(([^)]+woff2[^)]*)\)/)?.[1];
+    if(woffUrl){
+      const fontBuf = await (await fetch(woffUrl)).arrayBuffer();
+      const fontB64 = btoa(String.fromCharCode(...new Uint8Array(fontBuf)));
+      doc.addFileToVFS('NotoSans.ttf', fontB64);
+      doc.addFont('NotoSans.ttf', 'NotoSans', 'normal');
+      doc.setFont('NotoSans');
+    }
+  } catch(e) { console.log('font err',e); doc.setFont('helvetica'); }
 
   doc.setFontSize(20); doc.setTextColor(40,40,40);
   doc.text('Asia Home', 20, 22);
