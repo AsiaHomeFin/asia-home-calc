@@ -25,8 +25,6 @@ button{cursor:pointer;font-size:13px;border-radius:var(--r);border:none;padding:
 .btn-ghost:hover{border-color:var(--accent);color:var(--accent)}
 .btn-danger{background:transparent;border:1px solid var(--red);color:var(--red)}
 .btn-sm{padding:4px 10px;font-size:12px}
-
-/* LOGIN */
 #loginScreen{display:flex;align-items:center;justify-content:center;min-height:100vh;padding:1rem}
 .login-box{background:var(--bg2);border:1px solid var(--border);border-radius:var(--r2);padding:2.5rem;width:100%;max-width:380px}
 .login-logo{font-size:22px;font-weight:700;color:var(--accent);margin-bottom:4px}
@@ -34,8 +32,6 @@ button{cursor:pointer;font-size:13px;border-radius:var(--r);border:none;padding:
 .login-field{margin-bottom:1rem}
 .login-field label{display:block;font-size:12px;color:var(--text2);margin-bottom:6px}
 .login-err{color:var(--red);font-size:12px;margin-top:8px;display:none}
-
-/* APP */
 #app{display:none;min-height:100vh}
 .topbar{background:var(--bg2);border-bottom:1px solid var(--border);padding:0 1.5rem;height:52px;display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;z-index:40}
 .topbar-logo{font-size:15px;font-weight:700;color:var(--accent)}
@@ -51,8 +47,6 @@ button{cursor:pointer;font-size:13px;border-radius:var(--r);border:none;padding:
 .nav-item.active{color:var(--accent);border-left-color:var(--accent);background:rgba(200,169,110,.06)}
 .nav-icon{font-size:16px;width:20px;text-align:center}
 .content{padding:1.5rem;overflow-y:auto}
-
-/* CARDS */
 .page-title{font-size:18px;font-weight:600;margin-bottom:1.25rem}
 .card{background:var(--bg2);border:1px solid var(--border);border-radius:var(--r2);padding:1.25rem;margin-bottom:1rem}
 .card-title{font-size:13px;font-weight:600;color:var(--text2);text-transform:uppercase;letter-spacing:.06em;margin-bottom:1rem}
@@ -60,8 +54,6 @@ button{cursor:pointer;font-size:13px;border-radius:var(--r);border:none;padding:
 .grid3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px}
 .field{display:flex;flex-direction:column;gap:5px}
 .field label{font-size:12px;color:var(--text2)}
-
-/* TABLE */
 .tbl-wrap{background:var(--bg2);border:1px solid var(--border);border-radius:var(--r2);overflow:hidden;margin-bottom:1rem}
 table{width:100%;border-collapse:collapse;font-size:13px}
 th{padding:10px 12px;text-align:left;font-size:11px;font-weight:600;color:var(--text2);letter-spacing:.06em;text-transform:uppercase;border-bottom:1px solid var(--border);background:var(--bg3)}
@@ -69,22 +61,16 @@ td{padding:9px 12px;border-bottom:1px solid var(--border);color:var(--text)}
 tr:last-child td{border-bottom:none}
 tr:hover td{background:rgba(255,255,255,.02)}
 .tr-total td{background:var(--bg3);font-weight:600;border-top:1px solid var(--border)}
-
-/* STATUS BADGES */
 .badge{font-size:11px;padding:3px 9px;border-radius:20px;font-weight:600}
 .badge-draft{background:#1a1a2e;color:var(--blue)}
 .badge-review{background:#2e2a1a;color:var(--accent)}
 .badge-approved{background:#1a2e1a;color:var(--green)}
 .badge-done{background:#1e1e1e;color:var(--text2)}
-
-/* METRICS */
 .metrics{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:1.5rem}
 .metric{background:var(--bg2);border:1px solid var(--border);border-radius:var(--r2);padding:1rem 1.25rem}
 .metric-label{font-size:11px;color:var(--text2);margin-bottom:6px}
 .metric-value{font-size:22px;font-weight:700;color:var(--text)}
 .metric-sub{font-size:11px;color:var(--text3);margin-top:4px}
-
-/* MODAL */
 .overlay{position:fixed;inset:0;background:rgba(0,0,0,.65);z-index:100;display:flex;align-items:flex-start;justify-content:center;padding:1.5rem 1rem;overflow-y:auto}
 .modal{background:var(--bg2);border:1px solid var(--border);border-radius:var(--r2);padding:1.75rem;width:100%;max-width:640px}
 .modal-title{font-size:16px;font-weight:600;margin-bottom:1.5rem}
@@ -96,37 +82,29 @@ tr:hover td{background:rgba(255,255,255,.02)}
 .desc-list{margin-bottom:8px}
 .desc-row{display:flex;gap:6px;margin-bottom:5px}
 .section-sep{font-size:11px;font-weight:600;color:var(--text2);text-transform:uppercase;letter-spacing:.06em;margin:1rem 0 .5rem}
-
-/* TABS */
 .tabs{display:flex;gap:4px;background:var(--bg3);padding:4px;border-radius:var(--r2);margin-bottom:1.25rem;width:fit-content}
 .tab{padding:6px 16px;font-size:13px;font-weight:500;border-radius:var(--r);background:transparent;color:var(--text2)}
 .tab.active{background:var(--bg2);color:var(--text);border:1px solid var(--border)}
-
-/* UPLOAD ZONE */
 .upload-zone{border:2px dashed var(--border);border-radius:var(--r2);padding:2rem;text-align:center;cursor:pointer;transition:.15s}
 .upload-zone:hover{border-color:var(--accent);background:rgba(200,169,110,.04)}
 .upload-icon{font-size:32px;margin-bottom:8px}
 .upload-text{font-size:14px;color:var(--text2)}
 .upload-sub{font-size:12px;color:var(--text3);margin-top:4px}
-
-/* AI LOADER */
 .ai-loader{display:none;align-items:center;gap:12px;background:var(--bg3);border-radius:var(--r);padding:12px 16px;margin-top:1rem}
 .ai-spinner{width:18px;height:18px;border:2px solid var(--border);border-top-color:var(--accent);border-radius:50%;animation:spin .8s linear infinite}
 @keyframes spin{to{transform:rotate(360deg)}}
 .ai-text{font-size:13px;color:var(--text2)}
-
-/* LOG TABLE */
 .log-row td{font-size:12px}
 .log-action{color:var(--accent)}
-
-/* KF CONTROLS */
 .kf-row{display:flex;align-items:center;gap:10px;padding:8px 0;border-bottom:1px solid var(--border)}
 .kf-row:last-child{border-bottom:none}
 .kf-name{flex:1;font-size:13px}
 .kf-cost{font-size:12px;color:var(--text2);min-width:110px;text-align:right}
 .kf-select{width:90px}
 .kf-price{font-size:13px;font-weight:600;min-width:120px;text-align:right;color:var(--accent)}
-
+.higold-box{background:var(--bg3);border-radius:var(--r);padding:12px;margin-top:1rem;border:1px solid var(--border)}
+.higold-title{font-size:11px;font-weight:600;color:var(--accent);text-transform:uppercase;letter-spacing:.06em;margin-bottom:8px}
+.notify-dot{width:8px;height:8px;background:var(--accent);border-radius:50%;display:inline-block;margin-right:6px}
 @media(max-width:640px){
   .main-layout{grid-template-columns:1fr}
   .sidebar{display:none}
@@ -137,25 +115,17 @@ tr:hover td{background:rgba(255,255,255,.02)}
 </head>
 <body>
 
-<!-- LOGIN -->
 <div id="loginScreen">
   <div class="login-box">
     <div class="login-logo">Asia Home</div>
     <div class="login-sub">Система расчёта мебели</div>
-    <div class="login-field">
-      <label>Логин</label>
-      <input type="text" id="loginUsername" placeholder="Введите логин">
-    </div>
-    <div class="login-field">
-      <label>Пароль</label>
-      <input type="password" id="loginPassword" placeholder="Введите пароль" onkeydown="if(event.key==='Enter')doLogin()">
-    </div>
+    <div class="login-field"><label>Логин</label><input type="text" id="loginUsername" placeholder="Введите логин"></div>
+    <div class="login-field"><label>Пароль</label><input type="password" id="loginPassword" placeholder="Введите пароль" onkeydown="if(event.key==='Enter')doLogin()"></div>
     <button class="btn-primary" style="width:100%;padding:10px;font-size:14px;margin-top:.5rem" onclick="doLogin()">Войти</button>
     <div class="login-err" id="loginErr">Неверный логин или пароль</div>
   </div>
 </div>
 
-<!-- APP -->
 <div id="app">
   <div class="topbar">
     <div class="topbar-logo">Asia Home</div>
@@ -171,20 +141,16 @@ tr:hover td{background:rgba(255,255,255,.02)}
   </div>
 </div>
 
-<!-- MODAL -->
 <div class="overlay" id="modal" style="display:none" onclick="if(event.target===this)closeModal()">
   <div class="modal" id="modalInner"></div>
 </div>
 
 <script>
-// ─── CONFIG ──────────────────────────────────────────────────────────────────
-const SUPA_URL = 'https://pdubjnovmbuzdgajwxpp.supabase.co';
-const SUPA_KEY = 'sb_publishable_BXQUtVD_43VzvJSYxKMgIg_UdpSOQlO';
-const CLAUDE_KEY = '';
-const PROXY_URL = 'https://asia-home-proxy.fkirill92.workers.dev';
+const SUPA_URL='https://pdubjnovmbuzdgajwxpp.supabase.co';
+const SUPA_KEY='sb_publishable_BXQUtVD_43VzvJSYxKMgIg_UdpSOQlO';
+const PROXY_URL='https://asia-home-proxy.fkirill92.workers.dev';
 
-// ─── PRICES ──────────────────────────────────────────────────────────────────
-const P = {
+const P={
   ldsp_ru:20000,ldsp_eg:28000,hdf:6500,
   mdf_frez:29000,mdf_frez2:33800,mdf_paint:22000,
   mdf_shpon:26000,mdf_shpon_cos:36300,hdf_paint:10000,
@@ -194,10 +160,11 @@ const P = {
   shtanga:5000,light:4600,nogi:400,
   glass4:24000,glass6:28000,mirror:13000,
   prof_alu:18000,rifl:25000,polir:300,
-  krep:1,rash:5000,dost:4000
+  krep:1,rash:5000,dost:4000,
+  higold:1
 };
 
-const MAT = [
+const MAT=[
   {k:'ldsp_ru',l:'ЛДСП Россия',u:'шт'},{k:'ldsp_eg',l:'ЛДСП Egger',u:'шт'},{k:'hdf',l:'ХДФ белый',u:'шт'},
   {k:'mdf_frez',l:'МДФ + фреза',u:'кв.м'},{k:'mdf_frez2',l:'МДФ сл.фреза',u:'кв.м'},{k:'mdf_paint',l:'МДФ покраска',u:'кв.м'},
   {k:'mdf_shpon',l:'МДФ шпон',u:'кв.м'},{k:'mdf_shpon_cos',l:'МДФ шпон косая',u:'кв.м'},{k:'hdf_paint',l:'ХДФ крашен',u:'кв.м'},
@@ -211,162 +178,138 @@ const MAT = [
   {k:'krep',l:'Крепления',u:'тг'},{k:'rash',l:'Расходники',u:'компл'},{k:'dost',l:'Доставка',u:'точек'}
 ];
 
-const KF_OPTIONS = [2.3,2.35,2.4,2.5,2.6,2.7,2.75,2.8,3.0];
+const KF_OPTIONS=[2.3,2.35,2.4,2.5,2.6,2.7,2.75,2.8,3.0];
+const STATUS_LABELS={draft:'Черновик',review:'На проверке',approved:'Утверждён',done:'Готово'};
 
-// ─── STATE ───────────────────────────────────────────────────────────────────
-let currentUser = null, currentSession = null;
-let currentProject = null, currentItems = [];
-let currentPage = 'projects';
+let currentUser=null,currentSession=null,currentProject=null,currentItems=[],currentPage='projects';
 
-// ─── SUPABASE ────────────────────────────────────────────────────────────────
-async function db(method, table, body, filter='') {
-  const res = await fetch(`${SUPA_URL}/rest/v1/${table}${filter}`, {
-    method, headers: {
-      'apikey': SUPA_KEY,
-      'Authorization': 'Bearer ' + SUPA_KEY,
-      'Content-Type': 'application/json',
-      'Prefer': method==='POST' ? 'return=representation' : 'return=representation'
-    },
-    body: body ? JSON.stringify(body) : undefined
+async function db(method,table,body,filter=''){
+  const res=await fetch(`${SUPA_URL}/rest/v1/${table}${filter}`,{
+    method,headers:{'apikey':SUPA_KEY,'Authorization':'Bearer '+SUPA_KEY,'Content-Type':'application/json','Prefer':'return=representation'},
+    body:body?JSON.stringify(body):undefined
   });
-  if (!res.ok) { const e = await res.text(); console.error(e); return null; }
-  const text = await res.text();
-  return text ? JSON.parse(text) : null;
+  if(!res.ok){console.error(await res.text());return null;}
+  const t=await res.text();return t?JSON.parse(t):null;
 }
-const dbGet = (table, filter='') => db('GET', table, null, filter);
-const dbPost = (table, body) => db('POST', table, body);
-const dbPatch = (table, body, filter) => db('PATCH', table, body, filter);
-const dbDelete = (table, filter) => db('DELETE', table, null, filter);
+const dbGet=(t,f='')=>db('GET',t,null,f);
+const dbPost=(t,b)=>db('POST',t,b);
+const dbPatch=(t,b,f)=>db('PATCH',t,b,f);
+const dbDelete=(t,f)=>db('DELETE',t,null,f);
 
-// ─── AUTH ────────────────────────────────────────────────────────────────────
-async function doLogin() {
-  const username = document.getElementById('loginUsername').value.trim();
-  const password = document.getElementById('loginPassword').value;
-  const err = document.getElementById('loginErr');
-  err.style.display = 'none';
-
-  const users = await dbGet('users', `?username=eq.${encodeURIComponent(username)}&password_hash=eq.${encodeURIComponent(password)}`);
-  if (!users || users.length === 0) { err.style.display = 'block'; return; }
-
-  currentUser = users[0];
-  // Создаём сессию
-  const sessions = await dbPost('sessions', { user_id: currentUser.id, ip_address: 'web', user_agent: navigator.userAgent });
-  currentSession = sessions ? sessions[0] : null;
-  await logAction('login', { username });
-
-  document.getElementById('loginScreen').style.display = 'none';
-  document.getElementById('app').style.display = 'block';
+async function doLogin(){
+  const username=document.getElementById('loginUsername').value.trim();
+  const password=document.getElementById('loginPassword').value;
+  const err=document.getElementById('loginErr');
+  err.style.display='none';
+  const users=await dbGet('users',`?username=eq.${encodeURIComponent(username)}&password_hash=eq.${encodeURIComponent(password)}`);
+  if(!users||users.length===0){err.style.display='block';return;}
+  currentUser=users[0];
+  const sessions=await dbPost('sessions',{user_id:currentUser.id,ip_address:'web',user_agent:navigator.userAgent});
+  currentSession=sessions?sessions[0]:null;
+  await logAction('login',{username});
+  document.getElementById('loginScreen').style.display='none';
+  document.getElementById('app').style.display='block';
   initApp();
 }
 
-async function doLogout() {
-  if (currentSession) {
-    await dbPatch('sessions', { logout_at: new Date().toISOString() }, `?id=eq.${currentSession.id}`);
-  }
-  await logAction('logout', {});
-  currentUser = null; currentSession = null;
-  document.getElementById('app').style.display = 'none';
-  document.getElementById('loginScreen').style.display = 'flex';
-  document.getElementById('loginUsername').value = '';
-  document.getElementById('loginPassword').value = '';
+async function doLogout(){
+  if(currentSession)await dbPatch('sessions',{logout_at:new Date().toISOString()},`?id=eq.${currentSession.id}`);
+  await logAction('logout',{});
+  currentUser=null;currentSession=null;
+  document.getElementById('app').style.display='none';
+  document.getElementById('loginScreen').style.display='flex';
+  document.getElementById('loginUsername').value='';
+  document.getElementById('loginPassword').value='';
 }
 
-async function logAction(action, details) {
-  if (!currentUser) return;
-  await dbPost('activity_log', { user_id: currentUser.id, action, details });
+async function logAction(action,details){
+  if(!currentUser)return;
+  await dbPost('activity_log',{user_id:currentUser.id,action,details});
 }
 
-// ─── APP INIT ────────────────────────────────────────────────────────────────
-function initApp() {
-  const role = currentUser.role;
-  const name = currentUser.full_name || currentUser.username;
-
-  document.getElementById('topbarName').textContent = name;
-  const rb = document.getElementById('topbarRole');
-  rb.textContent = role === 'manager' ? 'Менеджер' : role === 'owner' ? 'Владелец' : 'Фин. директор';
-  rb.className = 'role-badge role-' + role;
-
-  const nav = [
-    { id:'projects', icon:'📋', label:'Проекты', roles:['manager','owner','fin'] },
-    { id:'review', icon:'🔍', label:'На проверке', roles:['owner'] },
-    { id:'kf', icon:'⚙️', label:'КФ и расчёт', roles:['owner'] },
-    { id:'reports', icon:'📊', label:'Отчёты', roles:['owner','fin'] },
-    { id:'log', icon:'🕐', label:'Активность', roles:['owner'] },
-    { id:'users', icon:'👥', label:'Сотрудники', roles:['owner'] },
-  ].filter(n => n.roles.includes(role));
-
-  document.getElementById('sidebar').innerHTML = nav.map(n =>
-    `<div class="nav-item" id="nav_${n.id}" onclick="goto('${n.id}')">
-      <span class="nav-icon">${n.icon}</span>${n.label}
-    </div>`
-  ).join('');
-
+function initApp(){
+  const role=currentUser.role;
+  const name=currentUser.full_name||currentUser.username;
+  document.getElementById('topbarName').textContent=name;
+  const rb=document.getElementById('topbarRole');
+  rb.textContent=role==='manager'?'Менеджер':role==='owner'?'Владелец':'Фин. директор';
+  rb.className='role-badge role-'+role;
+  const nav=[
+    {id:'projects',icon:'📋',label:'Проекты',roles:['manager','owner','fin']},
+    {id:'review',icon:'🔍',label:'На проверке',roles:['owner']},
+    {id:'kf',icon:'⚙️',label:'КФ и расчёт',roles:['owner']},
+    {id:'reports',icon:'📊',label:'Отчёты',roles:['owner','fin']},
+    {id:'log',icon:'🕐',label:'Активность',roles:['owner']},
+    {id:'users',icon:'👥',label:'Сотрудники',roles:['owner']},
+  ].filter(n=>n.roles.includes(role));
+  document.getElementById('sidebar').innerHTML=nav.map(n=>`<div class="nav-item" id="nav_${n.id}" onclick="goto('${n.id}')"><span class="nav-icon">${n.icon}</span>${n.label}</div>`).join('');
   goto('projects');
 }
 
-function goto(page) {
-  currentPage = page;
-  document.querySelectorAll('.nav-item').forEach(el => el.classList.remove('active'));
-  const el = document.getElementById('nav_' + page);
-  if (el) el.classList.add('active');
-
-  const pages = { projects: renderProjects, review: renderReview, kf: renderKF, reports: renderReports, log: renderLog, users: renderUsers };
-  if (pages[page]) pages[page]();
+function goto(page){
+  currentPage=page;
+  document.querySelectorAll('.nav-item').forEach(el=>el.classList.remove('active'));
+  const el=document.getElementById('nav_'+page);
+  if(el)el.classList.add('active');
+  const pages={projects:renderProjects,review:renderReview,kf:renderKF,reports:renderReports,log:renderLog,users:renderUsers};
+  if(pages[page])pages[page]();
 }
 
-const fmt = n => Math.round(n).toLocaleString('ru-RU');
-function calcCost(it) {
-  const m = it.materials || {};
-  return MAT.reduce((s,f) => { const q=Number(m[f.k])||0; return q ? s+q*P[f.k] : s; }, 0);
+const fmt=n=>Math.round(n).toLocaleString('ru-RU');
+
+function calcCost(it){
+  const m=it.materials||{};
+  let base=MAT.reduce((s,f)=>{const q=Number(m[f.k])||0;return q?s+q*P[f.k]:s;},0);
+  if(m.higold_cost&&m.higold_cost>0){
+    const hkf=m.higold_qty>=3?1.4:1.6;
+    base+=m.higold_cost*hkf;
+  }
+  return base;
 }
 
-// ─── PROJECTS ────────────────────────────────────────────────────────────────
-async function renderProjects() {
-  const role = currentUser.role;
-  document.getElementById('mainContent').innerHTML = `
+function calcBase(it){
+  const m=it.materials||{};
+  return MAT.reduce((s,f)=>{const q=Number(m[f.k])||0;return q?s+q*P[f.k]:s;},0);
+}
+
+async function renderProjects(){
+  const role=currentUser.role;
+  document.getElementById('mainContent').innerHTML=`
     <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:1.25rem">
       <div class="page-title">Проекты</div>
-      ${role !== 'fin' ? '<button class="btn-primary" onclick="openNewProject()">+ Новый проект</button>' : ''}
+      ${role!=='fin'?'<button class="btn-primary" onclick="openNewProject()">+ Новый проект</button>':''}
     </div>
     <div id="projectsList"><div style="color:var(--text2);font-size:13px">Загрузка...</div></div>`;
-
-  const filter = role === 'manager' ? `?created_by=eq.${currentUser.id}&order=created_at.desc` : '?order=created_at.desc';
-  const projects = await dbGet('projects', filter);
-
-  if (!projects || projects.length === 0) {
-    document.getElementById('projectsList').innerHTML = '<div style="color:var(--text2);font-size:13px;padding:1rem 0">Проектов пока нет</div>';
+  const filter=role==='manager'?`?created_by=eq.${currentUser.id}&order=created_at.desc`:'?order=created_at.desc';
+  const projects=await dbGet('projects',filter);
+  if(!projects||projects.length===0){
+    document.getElementById('projectsList').innerHTML='<div style="color:var(--text2);font-size:13px;padding:1rem 0">Проектов пока нет</div>';
     return;
   }
-
-  document.getElementById('projectsList').innerHTML = `
-    <div class="tbl-wrap"><table>
-      <thead><tr>
-        <th>Проект / клиент</th><th>Статус</th><th>Изделий</th>
-        ${role !== 'manager' ? '<th style="text-align:right">Сумма</th>' : ''}
-        <th>Дата</th><th></th>
-      </tr></thead>
-      <tbody>${await Promise.all(projects.map(async p => {
-        const items = await dbGet('project_items', `?project_id=eq.${p.id}`);
-        const total = (items||[]).reduce((s,it) => s + calcCost(it) * (it.kf||2.6), 0);
-        const statusLabel = {draft:'Черновик',review:'На проверке',approved:'Утверждён',done:'Готово'}[p.status]||p.status;
-        return `<tr>
-          <td><div style="font-weight:500">${p.title}</div><div style="font-size:11px;color:var(--text2)">${p.client||''}${p.city?` · ${p.city}`:''}</div></td>
-          <td><span class="badge badge-${p.status}">${statusLabel}</span></td>
-          <td>${(items||[]).length}</td>
-          ${role !== 'manager' ? `<td style="text-align:right;font-weight:500;color:var(--accent)">${total?fmt(total)+' тг':'—'}</td>` : ''}
-          <td style="color:var(--text2);font-size:12px">${new Date(p.created_at).toLocaleDateString('ru-RU')}</td>
-          <td><button class="btn-ghost btn-sm" onclick="openProject('${p.id}')">Открыть →</button></td>
-        </tr>`;
-      })).then(rows => rows.join(''))}</tbody>
-    </table></div>`;
+  const rows=await Promise.all(projects.map(async p=>{
+    const items=await dbGet('project_items',`?project_id=eq.${p.id}`);
+    const total=(items||[]).reduce((s,it)=>s+calcCost(it)*(it.kf||2.6),0);
+    const sl=STATUS_LABELS[p.status]||p.status;
+    return `<tr>
+      <td><div style="font-weight:500">${p.title}</div><div style="font-size:11px;color:var(--text2)">${p.client||''}${p.city?` · ${p.city}`:''}</div></td>
+      <td><span class="badge badge-${p.status}">${sl}</span></td>
+      <td>${(items||[]).length}</td>
+      ${role!=='manager'?`<td style="text-align:right;font-weight:500;color:var(--accent)">${total?fmt(total)+' тг':'—'}</td>`:''}
+      <td style="color:var(--text2);font-size:12px">${new Date(p.created_at).toLocaleDateString('ru-RU')}</td>
+      <td><button class="btn-ghost btn-sm" onclick="openProject('${p.id}')">Открыть →</button></td>
+    </tr>`;
+  }));
+  document.getElementById('projectsList').innerHTML=`<div class="tbl-wrap"><table>
+    <thead><tr><th>Проект / клиент</th><th>Статус</th><th>Изделий</th>${role!=='manager'?'<th style="text-align:right">Сумма</th>':''}<th>Дата</th><th></th></tr></thead>
+    <tbody>${rows.join('')}</tbody></table></div>`;
 }
 
-function openNewProject() {
-  document.getElementById('modalInner').innerHTML = `
+function openNewProject(){
+  document.getElementById('modalInner').innerHTML=`
     <div class="modal-title">Новый проект</div>
     <div class="grid2" style="margin-bottom:1rem">
       <div class="field" style="grid-column:1/-1"><label>Название проекта</label><input id="mp_title" type="text" placeholder="ЖК Верона, кв. 71"></div>
-      <div class="field"><label>Клиент</label><input id="mp_client" type="text" placeholder="Ерлан и Гульнур"></div>
+      <div class="field"><label>Клиент</label><input id="mp_client" type="text"></div>
       <div class="field"><label>Город</label><input id="mp_city" type="text" value="Караганда"></div>
       <div class="field"><label>Дизайнер</label><input id="mp_designer" type="text"></div>
     </div>
@@ -374,179 +317,141 @@ function openNewProject() {
       <button class="btn-primary" onclick="saveNewProject()">Создать</button>
       <button class="btn-ghost" onclick="closeModal()">Отмена</button>
     </div>`;
-  document.getElementById('modal').style.display = 'flex';
+  document.getElementById('modal').style.display='flex';
 }
 
-async function saveNewProject() {
-  const title = document.getElementById('mp_title').value.trim();
-  if (!title) return;
-  const p = await dbPost('projects', {
-    title, client: document.getElementById('mp_client').value,
-    city: document.getElementById('mp_city').value,
-    designer: document.getElementById('mp_designer').value,
-    created_by: currentUser.id, status: 'draft'
-  });
-  await logAction('project_created', { title });
+async function saveNewProject(){
+  const title=document.getElementById('mp_title').value.trim();
+  if(!title)return;
+  const p=await dbPost('projects',{title,client:document.getElementById('mp_client').value,city:document.getElementById('mp_city').value,designer:document.getElementById('mp_designer').value,created_by:currentUser.id,status:'draft'});
+  await logAction('project_created',{title});
   closeModal();
-  if (p && p[0]) openProject(p[0].id);
-  else renderProjects();
+  if(p&&p[0])openProject(p[0].id);else renderProjects();
 }
 
-async function openProject(projectId) {
-  const projects = await dbGet('projects', `?id=eq.${projectId}`);
-  currentProject = projects ? projects[0] : null;
-  if (!currentProject) return;
-  currentItems = await dbGet('project_items', `?project_id=eq.${projectId}&order=position.asc`) || [];
+async function openProject(projectId){
+  const projects=await dbGet('projects',`?id=eq.${projectId}`);
+  currentProject=projects?projects[0]:null;
+  if(!currentProject)return;
+  currentItems=await dbGet('project_items',`?project_id=eq.${projectId}&order=position.asc`)||[];
   renderProjectDetail();
 }
 
-function renderProjectDetail() {
-  const role = currentUser.role;
-  const p = currentProject;
-  const items = currentItems;
-  const totCost = items.reduce((s,it) => s + calcCost(it), 0);
-  const totPrice = items.reduce((s,it) => s + calcCost(it) * (it.kf||2.6), 0);
-
-  document.getElementById('mainContent').innerHTML = `
-    <div style="display:flex;align-items:center;gap:10px;margin-bottom:1.25rem">
+function renderProjectDetail(){
+  const role=currentUser.role;
+  const p=currentProject;
+  const items=currentItems;
+  const totCost=items.reduce((s,it)=>s+calcCost(it),0);
+  const totPrice=items.reduce((s,it)=>s+calcCost(it)*(it.kf||2.6),0);
+  document.getElementById('mainContent').innerHTML=`
+    <div style="display:flex;align-items:center;gap:10px;margin-bottom:1.25rem;flex-wrap:wrap">
       <button class="btn-ghost btn-sm" onclick="goto('projects')">← Назад</button>
       <div style="flex:1">
         <div style="font-size:16px;font-weight:600">${p.title}</div>
         <div style="font-size:12px;color:var(--text2)">${p.client||''}${p.city?' · '+p.city:''}</div>
       </div>
-      ${role === 'manager' ? `<button class="btn-primary btn-sm" onclick="sendToReview()">Отправить на проверку</button>` : ''}
-      ${role === 'owner' ? `
+      ${role==='manager'?`<button class="btn-primary btn-sm" onclick="sendToReview()">Отправить на проверку</button>`:''}
+      ${role==='owner'?`
+        <button class="btn-ghost btn-sm" onclick="exportVedomPDF()">📋 Ведомость PDF</button>
         <button class="btn-ghost btn-sm" onclick="exportPDF()">📄 Выгрузить КП</button>
-        <button class="btn-primary btn-sm" onclick="approveProject()">✓ Утвердить</button>
-      ` : ''}
+        <button class="btn-primary btn-sm" onclick="approveProject()">✓ Утвердить</button>`:''}
     </div>
-
-    ${role !== 'manager' ? `
+    ${role!=='manager'?`
     <div class="metrics">
       <div class="metric"><div class="metric-label">Себестоимость</div><div class="metric-value">${fmt(totCost)}</div><div class="metric-sub">тенге</div></div>
       <div class="metric"><div class="metric-label">Цена клиенту</div><div class="metric-value" style="color:var(--accent)">${fmt(totPrice)}</div><div class="metric-sub">тенге</div></div>
       <div class="metric"><div class="metric-label">Предоплата 80%</div><div class="metric-value">${fmt(totPrice*.8)}</div><div class="metric-sub">тенге</div></div>
-    </div>` : ''}
-
+    </div>`:''}
     <div class="tabs">
       <button class="tab active" id="tab_vedom" onclick="switchTab('vedom')">Ведомость</button>
       <button class="tab" id="tab_desc" onclick="switchTab('desc')">Описание</button>
-      ${role === 'owner' ? '<button class="tab" id="tab_kf_proj" onclick="switchTab(\'kf_proj\')">КФ</button>' : ''}
-      ${role === 'manager' ? '<button class="tab" id="tab_upload" onclick="switchTab(\'upload\')">Загрузить PDF</button>' : ''}
+      ${role==='owner'?'<button class="tab" id="tab_kf_proj" onclick="switchTab(\'kf_proj\')">КФ</button>':''}
+      ${role==='manager'?'<button class="tab" id="tab_upload" onclick="switchTab(\'upload\')">Загрузить PDF</button>':''}
     </div>
-
     <div id="tabContent"></div>`;
-
-  switchTab(role === 'manager' ? 'upload' : 'vedom');
+  switchTab(role==='manager'?'upload':'vedom');
 }
 
-function switchTab(t) {
-  document.querySelectorAll('.tab').forEach(el => el.classList.remove('active'));
-  const el = document.getElementById('tab_' + t);
-  if (el) el.classList.add('active');
-
-  const tabs = { vedom: renderVedom, desc: renderDesc, kf_proj: renderKFProject, upload: renderUpload };
-  if (tabs[t]) tabs[t]();
+function switchTab(t){
+  document.querySelectorAll('.tab').forEach(el=>el.classList.remove('active'));
+  const el=document.getElementById('tab_'+t);if(el)el.classList.add('active');
+  const tabs={vedom:renderVedom,desc:renderDesc,kf_proj:renderKFProject,upload:renderUpload};
+  if(tabs[t])tabs[t]();
 }
 
-// ─── ВЕДОМОСТЬ ───────────────────────────────────────────────────────────────
-function renderVedom() {
-  const items = currentItems;
-  const role = currentUser.role;
-
-  if (!items.length) {
-    document.getElementById('tabContent').innerHTML = `
-      <div style="color:var(--text2);font-size:13px;padding:1rem 0">Изделий нет.
-      ${role==='manager'?'Загрузите дизайн-проект во вкладке "Загрузить PDF"':'Добавьте изделия.'}</div>
-      ${role !== 'manager' ? '<button class="btn-primary" onclick="openAddItem()">+ Добавить изделие</button>' : ''}`;
+function renderVedom(){
+  const items=currentItems;
+  const role=currentUser.role;
+  if(!items.length){
+    document.getElementById('tabContent').innerHTML=`
+      <div style="color:var(--text2);font-size:13px;padding:1rem 0">Изделий нет. ${role==='manager'?'Загрузите дизайн-проект во вкладке "Загрузить PDF"':'Добавьте изделия.'}</div>
+      ${role!=='manager'?'<button class="btn-primary" onclick="openAddItem()">+ Добавить изделие</button>':''}`;
     return;
   }
-
-  // Суммарная ведомость
-  const totals = {};
-  MAT.forEach(f => { totals[f.k] = items.reduce((s,it) => s+(Number((it.materials||{})[f.k])||0), 0); });
-
-  document.getElementById('tabContent').innerHTML = `
-    ${role !== 'manager' ? '<div style="margin-bottom:1rem"><button class="btn-primary btn-sm" onclick="openAddItem()">+ Добавить изделие</button></div>' : ''}
-
+  const totals={};
+  MAT.forEach(f=>{totals[f.k]=items.reduce((s,it)=>s+(Number((it.materials||{})[f.k])||0),0);});
+  document.getElementById('tabContent').innerHTML=`
+    ${role!=='manager'?'<div style="margin-bottom:1rem"><button class="btn-primary btn-sm" onclick="openAddItem()">+ Добавить изделие</button></div>':''}
     <div class="tbl-wrap" style="margin-bottom:1rem"><table>
-      <thead><tr>
-        <th style="width:4%">№</th><th>Изделие</th><th>Помещение</th>
-        <th>Основные материалы</th>
-        ${role !== 'manager' ? '<th style="text-align:right">КФ</th><th style="text-align:right">Цена</th>' : ''}
-        <th></th>
-      </tr></thead>
-      <tbody>${items.map((it,i) => {
-        const m = it.materials||{};
-        const mats = MAT.filter(f=>Number(m[f.k])>0).slice(0,4).map(f=>`${f.l}: ${m[f.k]}`).join(' · ');
-        const cost = calcCost(it);
-        const price = cost * (it.kf||2.6);
+      <thead><tr><th style="width:4%">№</th><th>Изделие</th><th>Помещение</th><th>Осн. материалы</th>
+      ${role!=='manager'?'<th style="text-align:right">КФ</th><th style="text-align:right">Цена</th>':''}<th></th></tr></thead>
+      <tbody>${items.map((it,i)=>{
+        const m=it.materials||{};
+        const mats=MAT.filter(f=>Number(m[f.k])>0).slice(0,3).map(f=>`${f.l}:${m[f.k]}`).join(' · ');
+        const cost=calcCost(it);const price=cost*(it.kf||2.6);
         return `<tr>
           <td style="color:var(--text2)">${i+1}</td>
           <td style="font-weight:500">${it.name||'—'}</td>
           <td style="color:var(--text2)">${it.room||'—'}</td>
-          <td style="font-size:12px;color:var(--text2)">${mats||'—'}</td>
-          ${role !== 'manager' ? `<td style="text-align:right;color:var(--text2)">${it.kf||2.6}</td>
-          <td style="text-align:right;font-weight:500;color:var(--accent)">${fmt(price)} тг</td>` : ''}
-          <td>
-            ${role !== 'manager' ? `<div style="display:flex;gap:5px">
-              <button class="btn-ghost btn-sm" onclick="openEditItem(${i})">ред.</button>
-              <button class="btn-danger btn-sm" onclick="deleteItem('${it.id}')">×</button>
-            </div>` : ''}
-          </td>
+          <td style="font-size:11px;color:var(--text2)">${mats||'—'}</td>
+          ${role!=='manager'?`<td style="text-align:right;color:var(--text2)">${it.kf||2.6}</td><td style="text-align:right;font-weight:500;color:var(--accent)">${fmt(price)} тг</td>`:''}
+          <td>${role!=='manager'?`<div style="display:flex;gap:5px"><button class="btn-ghost btn-sm" onclick="openEditItem(${i})">ред.</button><button class="btn-danger btn-sm" onclick="deleteItem('${it.id}')">×</button></div>`:''}</td>
         </tr>`;
-      }).join('')}
-      </tbody>
+      }).join('')}</tbody>
     </table></div>
-
     <div class="card">
       <div class="card-title">Сводная ведомость материалов</div>
       <div class="tbl-wrap"><table>
         <thead><tr><th>Материал</th><th style="text-align:right">Кол-во</th><th>Ед.</th>
-        ${role !== 'manager' ? '<th style="text-align:right">Цена</th><th style="text-align:right">Сумма</th>' : ''}
+        ${role!=='manager'?'<th style="text-align:right">Цена</th><th style="text-align:right">Сумма</th>':''}
         </tr></thead>
-        <tbody>${MAT.filter(f=>totals[f.k]>0).map(f => `
-          <tr><td>${f.l}</td>
-          <td style="text-align:right;font-weight:600">${totals[f.k]}</td>
-          <td style="color:var(--text2)">${f.u}</td>
-          ${role !== 'manager' ? `<td style="text-align:right;color:var(--text2)">${fmt(P[f.k])}</td>
-          <td style="text-align:right">${fmt(totals[f.k]*P[f.k])} тг</td>` : ''}
+        <tbody>${MAT.filter(f=>totals[f.k]>0).map(f=>`
+          <tr><td>${f.l}</td><td style="text-align:right;font-weight:600">${totals[f.k]}</td><td style="color:var(--text2)">${f.u}</td>
+          ${role!=='manager'?`<td style="text-align:right;color:var(--text2)">${fmt(P[f.k])}</td><td style="text-align:right">${fmt(totals[f.k]*P[f.k])} тг</td>`:''}
           </tr>`).join('')}
         </tbody>
       </table></div>
     </div>`;
 }
 
-// ─── ОПИСАНИЕ ────────────────────────────────────────────────────────────────
-function renderDesc() {
-  const items = currentItems;
-  if (!items.length) { document.getElementById('tabContent').innerHTML = '<div style="color:var(--text2);font-size:13px">Нет изделий</div>'; return; }
-  document.getElementById('tabContent').innerHTML = items.map((it,i) => {
-    const cost = calcCost(it); const price = cost*(it.kf||2.6);
+function renderDesc(){
+  const items=currentItems;
+  if(!items.length){document.getElementById('tabContent').innerHTML='<div style="color:var(--text2);font-size:13px">Нет изделий</div>';return;}
+  document.getElementById('tabContent').innerHTML=items.map((it,i)=>{
+    const price=calcCost(it)*(it.kf||2.6);
     return `<div class="card">
       <div style="display:flex;justify-content:space-between;margin-bottom:10px">
-        <div><span style="font-size:12px;color:var(--text2);margin-right:8px">${i+1}</span>
-        <strong>${it.name||'—'}</strong>${it.room?`<span style="font-size:12px;color:var(--text2);margin-left:8px">${it.room}</span>`:''}
-        </div>
-        ${currentUser.role !== 'manager' ? `<span style="font-weight:600;color:var(--accent)">${fmt(price)} тг</span>` : ''}
+        <div><span style="font-size:12px;color:var(--text2);margin-right:8px">${i+1}</span><strong>${it.name||'—'}</strong>${it.room?`<span style="font-size:12px;color:var(--text2);margin-left:8px">${it.room}</span>`:''}</div>
+        ${currentUser.role!=='manager'?`<span style="font-weight:600;color:var(--accent)">${fmt(price)} тг</span>`:''}
       </div>
-      ${it.description&&it.description.length ? `<ul style="padding-left:18px;font-size:13px;line-height:1.8;color:var(--text2)">${it.description.map(d=>`<li style="color:var(--text)">${d}</li>`).join('')}</ul>` : '<div style="font-size:12px;color:var(--text2)">Описание не заполнено</div>'}
+      ${it.description&&it.description.length?`<ul style="padding-left:18px;font-size:13px;line-height:1.8">${it.description.map(d=>`<li style="color:var(--text)">${d}</li>`).join('')}</ul>`:'<div style="font-size:12px;color:var(--text2)">Описание не заполнено</div>'}
       ${it.note?`<div style="font-size:12px;color:var(--text2);margin-top:6px;font-style:italic">${it.note}</div>`:''}
     </div>`;
   }).join('');
 }
 
-// ─── КФ ПРОЕКТА ──────────────────────────────────────────────────────────────
-function renderKFProject() {
-  const items = currentItems;
-  document.getElementById('tabContent').innerHTML = `
+function renderKFProject(){
+  const items=currentItems;
+  document.getElementById('tabContent').innerHTML=`
     <div class="card">
       <div class="card-title">Коэффициенты наценки</div>
-      ${items.map((it,i) => {
-        const cost = calcCost(it);
+      ${items.map((it,i)=>{
+        const base=calcBase(it);const cost=calcCost(it);
+        const m=it.materials||{};
+        const hasHigold=m.higold_cost&&m.higold_cost>0;
         return `<div class="kf-row">
           <span class="kf-name">${it.name||`Изделие ${i+1}`}<span style="font-size:11px;color:var(--text2);margin-left:8px">${it.room||''}</span></span>
-          <span class="kf-cost">${fmt(cost)} тг</span>
+          <span class="kf-cost">${fmt(base)} тг${hasHigold?` (+HIGOLD ${fmt(cost-base)})`:''}</span>
           <select class="kf-select" id="kf_${i}" onchange="updateKF(${i},this.value)">
             ${KF_OPTIONS.map(k=>`<option value="${k}"${(it.kf||2.6)==k?' selected':''}>${k}</option>`).join('')}
           </select>
@@ -556,16 +461,15 @@ function renderKFProject() {
     </div>`;
 }
 
-async function updateKF(idx, kf) {
-  currentItems[idx].kf = parseFloat(kf);
-  document.getElementById(`kfprice_${idx}`).textContent = fmt(calcCost(currentItems[idx]) * parseFloat(kf)) + ' тг';
-  await dbPatch('project_items', { kf: parseFloat(kf) }, `?id=eq.${currentItems[idx].id}`);
-  await logAction('kf_updated', { item: currentItems[idx].name, kf });
+async function updateKF(idx,kf){
+  currentItems[idx].kf=parseFloat(kf);
+  document.getElementById(`kfprice_${idx}`).textContent=fmt(calcCost(currentItems[idx])*parseFloat(kf))+' тг';
+  await dbPatch('project_items',{kf:parseFloat(kf)},`?id=eq.${currentItems[idx].id}`);
+  await logAction('kf_updated',{item:currentItems[idx].name,kf});
 }
 
-// ─── ЗАГРУЗКА PDF (Менеджер) ─────────────────────────────────────────────────
-function renderUpload() {
-  document.getElementById('tabContent').innerHTML = `
+function renderUpload(){
+  document.getElementById('tabContent').innerHTML=`
     <div class="card">
       <div class="card-title">Загрузить дизайн-проект</div>
       <div class="upload-zone" onclick="document.getElementById('pdfInput').click()">
@@ -582,114 +486,93 @@ function renderUpload() {
     </div>`;
 }
 
-async function handlePDF(input) {
-  if (!input.files[0]) return;
-  const loader = document.getElementById('aiLoader');
-  loader.style.display = 'flex';
+async function handlePDF(input){
+  if(!input.files[0])return;
+  const loader=document.getElementById('aiLoader');
+  loader.style.display='flex';
+  const reader=new FileReader();
+  reader.onload=async(e)=>{
+    const base64=e.target.result.split(',')[1];
+    document.getElementById('aiText').textContent='Анализирую планировки и мебель...';
+    try{
+      const response=await fetch(PROXY_URL,{
+        method:'POST',
+        headers:{'Content-Type':'application/json'},
+        body:JSON.stringify({
+          model:'claude-sonnet-4-6',
+          max_tokens:8000,
+          messages:[{role:'user',content:[
+            {type:'document',source:{type:'base64',media_type:'application/pdf',data:base64}},
+            {type:'text',text:`Ты — эксперт по мебельному производству. Проанализируй этот дизайн-проект квартиры и составь список всех мебельных изделий на заказ.
 
-  // Читаем PDF как base64
-  const reader = new FileReader();
-  reader.onload = async (e) => {
-    const base64 = e.target.result.split(',')[1];
-    document.getElementById('aiText').textContent = 'Анализирую планировки и мебель...';
-
-    try {
-      const response = await fetch(PROXY_URL, {
-  method: 'POST',
-  headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          model: 'claude-sonnet-4-6',
-          max_tokens: 8000,
-          messages: [{
-            role: 'user',
-            content: [
-              { type: 'document', source: { type: 'base64', media_type: 'application/pdf', data: base64 } },
-              { type: 'text', text: `Ты — эксперт по мебельному производству. Проанализируй этот дизайн-проект квартиры и составь список всех мебельных изделий на заказ.
-
-Для каждого изделия верни JSON объект со следующими полями:
+Для каждого изделия верни JSON объект:
 - name: название изделия
-- room: помещение
+- room: помещение  
 - description: массив строк с описанием (материалы, фурнитура)
-- note: примечание (что не включено в стоимость)
-- materials: объект с количествами материалов:
-  ldsp_ru (листов ЛДСП Россия), ldsp_eg (листов ЛДСП Egger), hdf (листов ХДФ),
-  mdf_frez (кв.м МДФ покраска+фреза), mdf_paint (кв.м МДФ покраска), mdf_shpon (кв.м МДФ шпон), mdf_shpon_cos (кв.м МДФ шпон косая),
-  kromka (метров кромки), naves (навесов Blum), nsm_d (НСМ доводчик), nsm_t (НСМ Tip-On),
-  meri (Merivobox), av_hl (Авентос HL), av_hk (Авентос HK_XS),
-  sush_v (сушилка верхняя), sush_n (сушилка нижняя INOXA),
-  shtanga (штанг), light (метров подсветки), nogi (ножек),
-  glass4 (кв.м стекло 4мм), glass6 (кв.м стекло 6мм бронза), mirror (кв.м зеркало),
-  prof_alu (профиль алюминиевый 3м), rifl (кв.м рифлёное стекло), polir (метров полировки),
-  krep (тг крепления - обычно 20000-40000), rash (компл расходников - обычно 4-8), dost (точек доставки - обычно 3-6)
+- note: что НЕ включено в стоимость
+- higold_cost: закупочная стоимость аксессуаров HIGOLD в тг (0 если нет)
+- higold_qty: количество позиций HIGOLD (для коэф: 1-2 шт = ×1.6, 3+ = ×1.4)
+- materials: объект:
+  ldsp_ru, ldsp_eg (листов ЛДСП), hdf (листов ХДФ),
+  mdf_frez, mdf_frez2, mdf_paint, mdf_shpon, mdf_shpon_cos, hdf_paint (кв.м),
+  kromka (м), naves, nsm_d, nsm_t, meri, av_hl, av_hk, sush_v, sush_n (шт),
+  shtanga (3м), light (м), nogi (шт),
+  glass4, glass6, mirror (кв.м), prof_alu (3м), rifl (кв.м), polir (м),
+  krep (тг, обычно 20000-40000), rash (компл, 4-8), dost (точек, 3-6)
 
-Правила расчёта:
-- ЛДСП лист 2750×1830мм. Для корпусной мебели КЗФ ~1.35 от чистой площади деталей
-- Фасад ≤1200мм высоты = 2 навеса, >1200мм = 4 навеса  
+Правила:
+- ЛДСП 2750×1830мм, КЗФ ~1.35
+- Фасад ≤1200мм = 2 навеса, >1200мм = 4 навеса
 - Кромка ~20м на лист ЛДСП
-- ХДФ: 1 лист на каждые 2-3 листа ЛДСП
-- Для кухни: много навесов (до 81 шт на большую), подсветка обязательна
+- ХДФ: 1 лист на 2-3 листа ЛДСП
+- Максимум 15 изделий — только крупные
 
-Максимум 15 изделий — только самые крупные и значимые. Не включай мелкие элементы типа полок и тумбочек если они часть большого изделия. Верни ТОЛЬКО JSON массив объектов, без пояснений, без markdown.` }
-            ]
-          }]
+Верни ТОЛЬКО JSON массив, без markdown.`}
+          ]}]
         })
       });
-
-      const data = await response.json();
-console.log('API response:', JSON.stringify(data));
-if (!data.content || !data.content[0]) {
-  throw new Error('Нет ответа от Claude: ' + JSON.stringify(data));
-}
-const text = data.content[0].text;
-      const clean = text.replace(/```json|```/g,'').trim();
-      const parsed = JSON.parse(clean);
-
-      document.getElementById('aiText').textContent = `Найдено изделий: ${parsed.length}. Сохраняю...`;
-
-      // Сохраняем в базу
-      for (let i = 0; i < parsed.length; i++) {
-        const it = parsed[i];
-        await dbPost('project_items', {
-          project_id: currentProject.id,
-          position: i,
-          name: it.name,
-          room: it.room,
-          description: it.description || [],
-          note: it.note || '',
-          kf: 2.6,
-          materials: it.materials || {}
+      const data=await response.json();
+      if(!data.content||!data.content[0])throw new Error('Нет ответа: '+JSON.stringify(data));
+      const text=data.content[0].text;
+      const clean=text.replace(/```json|```/g,'').trim();
+      const parsed=JSON.parse(clean);
+      document.getElementById('aiText').textContent=`Найдено изделий: ${parsed.length}. Сохраняю...`;
+      for(let i=0;i<parsed.length;i++){
+        const it=parsed[i];
+        const mats=it.materials||{};
+        if(it.higold_cost)mats.higold_cost=it.higold_cost;
+        if(it.higold_qty)mats.higold_qty=it.higold_qty;
+        await dbPost('project_items',{
+          project_id:currentProject.id,position:i,
+          name:it.name,room:it.room,
+          description:it.description||[],
+          note:it.note||'',kf:2.6,
+          materials:mats
         });
       }
-
-      // Обновляем статус
-      await dbPatch('projects', { status: 'review' }, `?id=eq.${currentProject.id}`);
-      currentProject.status = 'review';
-
-      currentItems = await dbGet('project_items', `?project_id=eq.${currentProject.id}&order=position.asc`) || [];
-      await logAction('pdf_uploaded', { project: currentProject.title, items: parsed.length });
-
-      loader.style.display = 'none';
-      document.getElementById('aiResult').innerHTML = `<div style="color:var(--green);font-size:13px;margin-top:1rem">✓ Готово! Найдено ${parsed.length} изделий. Проект отправлен на проверку.</div>`;
-      setTimeout(() => switchTab('vedom'), 1500);
-
-    } catch(err) {
-      loader.style.display = 'none';
-      document.getElementById('aiResult').innerHTML = `<div style="color:var(--red);font-size:13px;margin-top:1rem">Ошибка: ${err.message}. Нужен Claude API ключ.</div>`;
+      await dbPatch('projects',{status:'review'},`?id=eq.${currentProject.id}`);
+      currentProject.status='review';
+      currentItems=await dbGet('project_items',`?project_id=eq.${currentProject.id}&order=position.asc`)||[];
+      await logAction('pdf_uploaded',{project:currentProject.title,items:parsed.length});
+      loader.style.display='none';
+      document.getElementById('aiResult').innerHTML=`<div style="color:var(--green);font-size:13px;margin-top:1rem">✓ Готово! Найдено ${parsed.length} изделий. Проект отправлен на проверку.</div>`;
+      setTimeout(()=>switchTab('vedom'),1500);
+    }catch(err){
+      loader.style.display='none';
+      document.getElementById('aiResult').innerHTML=`<div style="color:var(--red);font-size:13px;margin-top:1rem">Ошибка: ${err.message}</div>`;
     }
   };
   reader.readAsDataURL(input.files[0]);
 }
 
-// ─── ДОБАВИТЬ/РЕДАКТИРОВАТЬ ИЗДЕЛИЕ ──────────────────────────────────────────
-let modalDesc = [], editingItemIdx = null;
+let modalDesc=[],editingItemIdx=null;
+function openAddItem(){editingItemIdx=null;openItemModal({});}
+function openEditItem(idx){editingItemIdx=idx;openItemModal(currentItems[idx]);}
 
-function openAddItem() { editingItemIdx = null; openItemModal({}); }
-function openEditItem(idx) { editingItemIdx = idx; openItemModal(currentItems[idx]); }
-
-function openItemModal(it) {
-  modalDesc = [...(it.description||[])];
-  const m = it.materials||{};
-  document.getElementById('modalInner').innerHTML = `
+function openItemModal(it){
+  modalDesc=[...(it.description||[])];
+  const m=it.materials||{};
+  document.getElementById('modalInner').innerHTML=`
     <div class="modal-title">${editingItemIdx===null?'Новое изделие':'Редактировать изделие'}</div>
     <div class="grid2" style="margin-bottom:1rem">
       <div class="field" style="grid-column:1/-1"><label>Название</label><input id="it_name" type="text" value="${it.name||''}"></div>
@@ -701,10 +584,17 @@ function openItemModal(it) {
     <div class="section-sep">Описание изделия</div>
     <div id="mdDescList"></div>
     <div style="display:flex;gap:6px;margin-bottom:6px">
-      <input id="mdNewDesc" type="text" placeholder="Добавить пункт описания (Enter)..." onkeydown="if(event.key==='Enter')mdAddDesc()">
+      <input id="mdNewDesc" type="text" placeholder="Добавить пункт (Enter)..." onkeydown="if(event.key==='Enter')mdAddDesc()">
       <button class="btn-ghost btn-sm" onclick="mdAddDesc()">+</button>
     </div>
-    <input id="it_note" type="text" placeholder="Примечание (что не включено...)" value="${it.note||''}" style="margin-bottom:1rem;font-size:12px;font-style:italic">
+    <input id="it_note" type="text" placeholder="Примечание..." value="${it.note||''}" style="margin-bottom:1rem;font-size:12px;font-style:italic">
+    <div class="higold-box">
+      <div class="higold-title">Аксессуары HIGOLD</div>
+      <div class="grid2">
+        <div class="field"><label>Закупочная стоимость (тг)</label><input type="number" id="it_higold_cost" value="${m.higold_cost||''}" placeholder="0" oninput="updateCostPreview()"></div>
+        <div class="field"><label>Кол-во позиций (1-2=×1.6, 3+=×1.4)</label><input type="number" id="it_higold_qty" value="${m.higold_qty||''}" placeholder="0" oninput="updateCostPreview()"></div>
+      </div>
+    </div>
     <div class="section-sep">Материалы и фурнитура</div>
     <div class="mat-grid">${MAT.map(f=>`
       <div class="mat-field">
@@ -719,57 +609,58 @@ function openItemModal(it) {
       <button class="btn-primary" onclick="saveItem()">Сохранить</button>
       <button class="btn-ghost" onclick="closeModal()">Отмена</button>
     </div>`;
-  mdRenderDesc();
-  updateCostPreview();
-  document.getElementById('modal').style.display = 'flex';
+  mdRenderDesc();updateCostPreview();
+  document.getElementById('modal').style.display='flex';
 }
 
-function mdRenderDesc() {
-  document.getElementById('mdDescList').innerHTML = modalDesc.map((d,i)=>
+function mdRenderDesc(){
+  document.getElementById('mdDescList').innerHTML=modalDesc.map((d,i)=>
     `<div class="desc-row"><input type="text" value="${d}" onchange="modalDesc[${i}]=this.value" style="flex:1;font-size:13px">
     <button class="btn-ghost btn-sm" onclick="mdRemoveDesc(${i})">×</button></div>`
   ).join('');
 }
-function mdAddDesc() {
-  const inp=document.getElementById('mdNewDesc');
-  if(inp.value.trim()){modalDesc.push(inp.value.trim());inp.value='';mdRenderDesc();}
-}
+function mdAddDesc(){const inp=document.getElementById('mdNewDesc');if(inp.value.trim()){modalDesc.push(inp.value.trim());inp.value='';mdRenderDesc();}}
 function mdRemoveDesc(i){modalDesc.splice(i,1);mdRenderDesc();}
 
-function updateCostPreview() {
-  const m={};MAT.forEach(f=>{m[f.k]=Number(document.getElementById('mf_'+f.k)?.value)||0;});
-  const cost=MAT.reduce((s,f)=>s+(m[f.k]?m[f.k]*P[f.k]:0),0);
+function updateCostPreview(){
+  const m={};
+  MAT.forEach(f=>{m[f.k]=Number(document.getElementById('mf_'+f.k)?.value)||0;});
+  const hcost=Number(document.getElementById('it_higold_cost')?.value)||0;
+  const hqty=Number(document.getElementById('it_higold_qty')?.value)||0;
+  const hkf=hqty>=3?1.4:1.6;
+  const base=MAT.reduce((s,f)=>s+(m[f.k]?m[f.k]*P[f.k]:0),0);
+  const cost=base+(hcost?hcost*hkf:0);
   const kf=parseFloat(document.getElementById('it_kf')?.value)||2.6;
   document.getElementById('cpCost').textContent=fmt(cost)+' тг';
   document.getElementById('cpPrice').textContent=fmt(cost*kf)+' тг';
 }
 
-document.addEventListener('input', e=>{if(e.target.id==='it_kf'||e.target.id?.startsWith('mf_'))updateCostPreview();});
+document.addEventListener('input',e=>{if(e.target.id==='it_kf')updateCostPreview();});
 
-async function saveItem() {
-  const m={};MAT.forEach(f=>{const v=Number(document.getElementById('mf_'+f.k)?.value)||0;if(v)m[f.k]=v;});
+async function saveItem(){
+  const m={};
+  MAT.forEach(f=>{const v=Number(document.getElementById('mf_'+f.k)?.value)||0;if(v)m[f.k]=v;});
+  const hcost=Number(document.getElementById('it_higold_cost')?.value)||0;
+  const hqty=Number(document.getElementById('it_higold_qty')?.value)||0;
+  if(hcost)m.higold_cost=hcost;
+  if(hqty)m.higold_qty=hqty;
   const payload={
     name:document.getElementById('it_name').value,
     room:document.getElementById('it_room').value,
     kf:parseFloat(document.getElementById('it_kf').value)||2.6,
     note:document.getElementById('it_note').value,
-    description:modalDesc,
-    materials:m,
+    description:modalDesc,materials:m,
     project_id:currentProject.id,
     position:editingItemIdx===null?currentItems.length:currentItems[editingItemIdx].position
   };
-  if(editingItemIdx===null){
-    await dbPost('project_items',payload);
-  } else {
-    await dbPatch('project_items',payload,`?id=eq.${currentItems[editingItemIdx].id}`);
-  }
+  if(editingItemIdx===null)await dbPost('project_items',payload);
+  else await dbPatch('project_items',payload,`?id=eq.${currentItems[editingItemIdx].id}`);
   currentItems=await dbGet('project_items',`?project_id=eq.${currentProject.id}&order=position.asc`)||[];
   await logAction(editingItemIdx===null?'item_added':'item_edited',{name:payload.name});
-  closeModal();
-  renderVedom();
+  closeModal();renderVedom();
 }
 
-async function deleteItem(id) {
+async function deleteItem(id){
   if(!confirm('Удалить изделие?'))return;
   await dbDelete('project_items',`?id=eq.${id}`);
   currentItems=currentItems.filter(it=>it.id!==id);
@@ -777,30 +668,26 @@ async function deleteItem(id) {
   renderVedom();
 }
 
-// ─── ОТПРАВИТЬ НА ПРОВЕРКУ ────────────────────────────────────────────────────
-async function sendToReview() {
+async function sendToReview(){
   await dbPatch('projects',{status:'review'},`?id=eq.${currentProject.id}`);
   currentProject.status='review';
   await logAction('sent_to_review',{project:currentProject.title});
+  await dbPost('activity_log',{user_id:currentUser.id,action:'notify_owner',details:{message:`Проект "${currentProject.title}" отправлен на проверку`,project_id:currentProject.id}});
   alert('Проект отправлен на проверку владельцу');
   renderProjectDetail();
 }
 
-async function approveProject() {
+async function approveProject(){
   await dbPatch('projects',{status:'approved'},`?id=eq.${currentProject.id}`);
   currentProject.status='approved';
   await logAction('project_approved',{project:currentProject.title});
   renderProjectDetail();
 }
 
-// ─── ПРОЕКТЫ НА ПРОВЕРКЕ (Владелец) ──────────────────────────────────────────
-async function renderReview() {
+async function renderReview(){
   document.getElementById('mainContent').innerHTML=`<div class="page-title">На проверке</div><div id="reviewList"><div style="color:var(--text2);font-size:13px">Загрузка...</div></div>`;
   const projects=await dbGet('projects','?status=eq.review&order=created_at.desc');
-  if(!projects||!projects.length){
-    document.getElementById('reviewList').innerHTML='<div style="color:var(--text2);font-size:13px">Нет проектов на проверке</div>';
-    return;
-  }
+  if(!projects||!projects.length){document.getElementById('reviewList').innerHTML='<div style="color:var(--text2);font-size:13px">Нет проектов на проверке</div>';return;}
   document.getElementById('reviewList').innerHTML=`<div class="tbl-wrap"><table>
     <thead><tr><th>Проект</th><th>Клиент</th><th>Дата</th><th></th></tr></thead>
     <tbody>${projects.map(p=>`<tr>
@@ -812,31 +699,26 @@ async function renderReview() {
   </table></div>`;
 }
 
-// ─── КФ ГЛОБАЛЬНЫЙ ───────────────────────────────────────────────────────────
-function renderKF() {
+function renderKF(){
   document.getElementById('mainContent').innerHTML=`
     <div class="page-title">Коэффициенты наценки</div>
     <div class="card">
       <div class="card-title">Стандартные коэффициенты</div>
-      ${[
-        ['2.3','Эконом'],['2.35','Кухня крупная с островом'],['2.4','Кухня средняя'],
-        ['2.5','Нестандартные изделия'],['2.6','Стандарт (ЛДСП корпус)'],
-        ['2.7','Санузел, прихожая'],['2.75','Смешанный тип'],
-        ['2.8','Шпон, стекло, сложные фасады'],['3.0','Премиум']
-      ].map(([k,l])=>`<div style="display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px solid var(--border)">
-        <span style="font-size:13px">${l}</span>
-        <span style="font-weight:700;color:var(--accent)">${k}</span>
+      ${[['2.3','Эконом'],['2.35','Кухня крупная с островом'],['2.4','Кухня средняя'],['2.5','Нестандарт'],['2.6','Стандарт ЛДСП корпус'],['2.7','Санузел, прихожая'],['2.75','Смешанный'],['2.8','Шпон, стекло, сложные'],['3.0','Премиум']].map(([k,l])=>`
+      <div style="display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px solid var(--border)">
+        <span style="font-size:13px">${l}</span><span style="font-weight:700;color:var(--accent)">${k}</span>
       </div>`).join('')}
-      <div style="font-size:12px;color:var(--text2);margin-top:12px">Коэффициент согласовывается лично перед выдачей КП. Аксессуары HIGOLD: ×1.6 (единичная), ×1.4 (3+ позиции)</div>
+      <div style="font-size:12px;color:var(--text2);margin-top:12px">
+        Коэффициент согласовывается лично перед выдачей КП.<br>
+        HIGOLD: ×1.6 (1-2 позиции), ×1.4 (3+ позиции)
+      </div>
     </div>`;
 }
 
-// ─── ОТЧЁТЫ ──────────────────────────────────────────────────────────────────
-async function renderReports() {
+async function renderReports(){
   document.getElementById('mainContent').innerHTML=`<div class="page-title">Финансовые отчёты</div><div id="repContent"><div style="color:var(--text2)">Загрузка...</div></div>`;
   const projects=await dbGet('projects','?order=created_at.desc');
-  if(!projects){return;}
-
+  if(!projects)return;
   let totalRev=0,totalCost=0;
   const rows=await Promise.all(projects.map(async p=>{
     const items=await dbGet('project_items',`?project_id=eq.${p.id}`)||[];
@@ -844,18 +726,17 @@ async function renderReports() {
     const price=items.reduce((s,it)=>s+calcCost(it)*(it.kf||2.6),0);
     totalRev+=price;totalCost+=cost;
     return `<tr><td>${p.title}</td><td style="color:var(--text2)">${p.client||'—'}</td>
-      <td><span class="badge badge-${p.status}">${{draft:'Черновик',review:'На проверке',approved:'Утверждён',done:'Готово'}[p.status]||p.status}</span></td>
+      <td><span class="badge badge-${p.status}">${STATUS_LABELS[p.status]||p.status}</span></td>
       <td style="text-align:right">${fmt(cost)} тг</td>
       <td style="text-align:right;color:var(--accent);font-weight:500">${fmt(price)} тг</td>
       <td style="text-align:right;color:var(--green)">${price?fmt(price-cost)+' тг':'—'}</td>
     </tr>`;
   }));
-
   document.getElementById('repContent').innerHTML=`
     <div class="metrics">
-      <div class="metric"><div class="metric-label">Общая выручка</div><div class="metric-value" style="color:var(--accent)">${fmt(totalRev)}</div><div class="metric-sub">тенге</div></div>
+      <div class="metric"><div class="metric-label">Выручка</div><div class="metric-value" style="color:var(--accent)">${fmt(totalRev)}</div><div class="metric-sub">тенге</div></div>
       <div class="metric"><div class="metric-label">Себестоимость</div><div class="metric-value">${fmt(totalCost)}</div><div class="metric-sub">тенге</div></div>
-      <div class="metric"><div class="metric-label">Валовая прибыль</div><div class="metric-value" style="color:var(--green)">${fmt(totalRev-totalCost)}</div><div class="metric-sub">тенге · ${totalRev?Math.round((totalRev-totalCost)/totalRev*100):0}%</div></div>
+      <div class="metric"><div class="metric-label">Валовая прибыль</div><div class="metric-value" style="color:var(--green)">${fmt(totalRev-totalCost)}</div><div class="metric-sub">${totalRev?Math.round((totalRev-totalCost)/totalRev*100):0}%</div></div>
     </div>
     <div class="tbl-wrap"><table>
       <thead><tr><th>Проект</th><th>Клиент</th><th>Статус</th><th style="text-align:right">Себест.</th><th style="text-align:right">Цена</th><th style="text-align:right">Прибыль</th></tr></thead>
@@ -863,26 +744,24 @@ async function renderReports() {
     </table></div>`;
 }
 
-// ─── ЛОГ АКТИВНОСТИ ──────────────────────────────────────────────────────────
-async function renderLog() {
+async function renderLog(){
   document.getElementById('mainContent').innerHTML=`<div class="page-title">Журнал активности</div><div id="logContent"><div style="color:var(--text2)">Загрузка...</div></div>`;
-  const logs=await dbGet('activity_log','?order=created_at.desc&limit=100');
+  const logs=await dbGet('activity_log','?order=created_at.desc&limit=200');
   const users=await dbGet('users')||[];
   const userMap=Object.fromEntries(users.map(u=>[u.id,u.full_name||u.username]));
-  const actionNames={login:'Вход',logout:'Выход',project_created:'Создан проект',pdf_uploaded:'Загружен PDF',item_added:'Добавлено изделие',item_edited:'Изменено изделие',item_deleted:'Удалено изделие',kf_updated:'Изменён КФ',sent_to_review:'Отправлено на проверку',project_approved:'Утверждён проект'};
+  const actionNames={login:'Вход',logout:'Выход',project_created:'Создан проект',pdf_uploaded:'Загружен PDF',item_added:'Добавлено изделие',item_edited:'Изменено изделие',item_deleted:'Удалено изделие',kf_updated:'Изменён КФ',sent_to_review:'На проверку',project_approved:'Утверждён',notify_owner:'Уведомление'};
   document.getElementById('logContent').innerHTML=`<div class="tbl-wrap"><table>
     <thead><tr><th>Время</th><th>Пользователь</th><th>Действие</th><th>Детали</th></tr></thead>
     <tbody>${(logs||[]).map(l=>`<tr class="log-row">
       <td>${new Date(l.created_at).toLocaleString('ru-RU')}</td>
       <td>${userMap[l.user_id]||'—'}</td>
       <td class="log-action">${actionNames[l.action]||l.action}</td>
-      <td style="color:var(--text2)">${l.details?JSON.stringify(l.details).slice(0,60):''}</td>
+      <td style="color:var(--text2)">${l.details?JSON.stringify(l.details).slice(0,80):''}</td>
     </tr>`).join('')}</tbody>
   </table></div>`;
 }
 
-// ─── ПОЛЬЗОВАТЕЛИ ────────────────────────────────────────────────────────────
-async function renderUsers() {
+async function renderUsers(){
   document.getElementById('mainContent').innerHTML=`
     <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:1.25rem">
       <div class="page-title">Сотрудники</div>
@@ -902,17 +781,14 @@ async function renderUsers() {
   </table></div>`;
 }
 
-function openAddUser() {
+function openAddUser(){
   document.getElementById('modalInner').innerHTML=`
     <div class="modal-title">Новый сотрудник</div>
     <div style="display:flex;flex-direction:column;gap:12px;margin-bottom:1.5rem">
       <div class="field"><label>Полное имя</label><input id="nu_name" type="text"></div>
       <div class="field"><label>Логин</label><input id="nu_login" type="text"></div>
       <div class="field"><label>Пароль</label><input id="nu_pass" type="password"></div>
-      <div class="field"><label>Роль</label><select id="nu_role">
-        <option value="manager">Менеджер</option>
-        <option value="fin">Фин. директор</option>
-      </select></div>
+      <div class="field"><label>Роль</label><select id="nu_role"><option value="manager">Менеджер</option><option value="fin">Фин. директор</option></select></div>
     </div>
     <div class="modal-footer">
       <button class="btn-primary" onclick="saveNewUser()">Добавить</button>
@@ -921,14 +797,13 @@ function openAddUser() {
   document.getElementById('modal').style.display='flex';
 }
 
-async function saveNewUser() {
+async function saveNewUser(){
   const u={full_name:document.getElementById('nu_name').value,username:document.getElementById('nu_login').value,password_hash:document.getElementById('nu_pass').value,role:document.getElementById('nu_role').value};
   if(!u.username||!u.password_hash)return;
-  await dbPost('users',u);
-  closeModal();renderUsers();
+  await dbPost('users',u);closeModal();renderUsers();
 }
 
-function changePassword(id,username) {
+function changePassword(id,username){
   document.getElementById('modalInner').innerHTML=`
     <div class="modal-title">Смена пароля — ${username}</div>
     <div class="field" style="margin-bottom:1.5rem"><label>Новый пароль</label><input id="np_pass" type="password"></div>
@@ -939,107 +814,157 @@ function changePassword(id,username) {
   document.getElementById('modal').style.display='flex';
 }
 
-async function savePassword(id) {
+async function savePassword(id){
   const pass=document.getElementById('np_pass').value;
   if(!pass)return;
   await dbPatch('users',{password_hash:pass},`?id=eq.${id}`);
   closeModal();
 }
 
-// ─── PDF ЭКСПОРТ ──────────────────────────────────────────────────────────────
-async function exportPDF() {
-  const {jsPDF} = window.jspdf;
-  const doc = new jsPDF({unit:'mm', format:'a4', putOnlyUsedFonts:true});
-  const p = currentProject;
-  const items = currentItems;
-  const totPrice = items.reduce((s,it) => s + calcCost(it)*(it.kf||2.6), 0);
-  const f = n => Math.round(n).toLocaleString('ru-RU');
+async function loadFont(){
+  try{
+    const {jsPDF}=window.jspdf;
+    const doc=new jsPDF();
+    const fontResp=await fetch('./NotoSans-Regular.ttf');
+    const fontBuf=await fontResp.arrayBuffer();
+    const uint8=new Uint8Array(fontBuf);
+    let binary='';
+    for(let i=0;i<uint8.length;i+=8192)binary+=String.fromCharCode(...uint8.subarray(i,i+8192));
+    return btoa(binary);
+  }catch(e){return null;}
+}
 
-  // Транслитерация кириллицы
-  const cyr = {
-    'а':'a','б':'b','в':'v','г':'g','д':'d','е':'e','ё':'yo','ж':'zh','з':'z',
-    'и':'i','й':'y','к':'k','л':'l','м':'m','н':'n','о':'o','п':'p','р':'r',
-    'с':'s','т':'t','у':'u','ф':'f','х':'kh','ц':'ts','ч':'ch','ш':'sh',
-    'щ':'shch','ъ':'','ы':'y','ь':'','э':'e','ю':'yu','я':'ya',
-    'А':'A','Б':'B','В':'V','Г':'G','Д':'D','Е':'E','Ё':'Yo','Ж':'Zh','З':'Z',
-    'И':'I','Й':'Y','К':'K','Л':'L','М':'M','Н':'N','О':'O','П':'P','Р':'R',
-    'С':'S','Т':'T','У':'U','Ф':'F','Х':'Kh','Ц':'Ts','Ч':'Ch','Ш':'Sh',
-    'Щ':'Shch','Ъ':'','Ы':'Y','Ь':'','Э':'E','Ю':'Yu','Я':'Ya'
-  };
-  const tr = s => (s||'').split('').map(c => cyr[c]||c).join('');
+async function exportPDF(){
+  const {jsPDF}=window.jspdf;
+  const doc=new jsPDF({unit:'mm',format:'a4',putOnlyUsedFonts:true});
+  const p=currentProject;
+  const items=currentItems;
+  const totPrice=items.reduce((s,it)=>s+calcCost(it)*(it.kf||2.6),0);
+  const f=n=>Math.round(n).toLocaleString('ru-RU');
 
-  doc.setFont('helvetica');
+  const fontB64=await loadFont();
+  if(fontB64){
+    doc.addFileToVFS('NotoSans.ttf',fontB64);
+    doc.addFont('NotoSans.ttf','NotoSans','normal');
+    doc.setFont('NotoSans');
+  } else {
+    doc.setFont('helvetica');
+  }
 
-  // Шапка
-  doc.setFontSize(20); doc.setTextColor(40,40,40);
-  doc.text('Asia Home', 20, 22);
-  doc.setFontSize(10); doc.setTextColor(120,120,120);
-  doc.text('Kommercheskoe predlozhenie', 20, 29);
-  doc.text(tr(`${p.title}${p.client?' · '+p.client:''}`), 20, 35);
-  doc.text(tr(`${p.city||'Karaganda'} · ${new Date().toLocaleDateString('ru-RU')}`), 20, 41);
-  doc.setDrawColor(220,220,220);
-  doc.line(20, 46, 190, 46);
+  doc.setFontSize(20);doc.setTextColor(40,40,40);
+  doc.text('Asia Home',20,22);
+  doc.setFontSize(10);doc.setTextColor(120,120,120);
+  doc.text('Коммерческое предложение',20,29);
+  doc.text(`${p.title}${p.client?' · '+p.client:''}`,20,35);
+  doc.text(`${p.city||'Караганда'} · ${new Date().toLocaleDateString('ru-RU')}`,20,41);
+  doc.setDrawColor(220,220,220);doc.line(20,46,190,46);
 
-  let y = 54;
-
-  items.forEach((it,i) => {
-    if(y > 260){doc.addPage(); y = 20;}
-    const cost = calcCost(it);
-    const price = cost * (it.kf||2.6);
-
-    doc.setFontSize(11); doc.setTextColor(40,40,40);
-    doc.text(`${i+1}. ${tr(it.name||'—')}`, 20, y);
+  let y=54;
+  items.forEach((it,i)=>{
+    if(y>260){doc.addPage();y=20;}
+    const cost=calcCost(it);const price=cost*(it.kf||2.6);
+    doc.setFontSize(11);doc.setTextColor(40,40,40);
+    doc.text(`${i+1}. ${it.name||'—'}`,20,y);
     doc.setTextColor(180,140,80);
-    doc.text(`${f(price)} tg`, 190, y, {align:'right'});
-    y += 5;
-
-    if(it.room){
-      doc.setFontSize(9); doc.setTextColor(120,120,120);
-      doc.text(tr(it.room), 20, y); y += 5;
-    }
-
-    if(it.description && it.description.length){
-      doc.setFontSize(9); doc.setTextColor(80,80,80);
-      it.description.slice(0,6).forEach(d => {
-        if(y > 268){doc.addPage(); y = 20;}
-        const lines = doc.splitTextToSize('- '+tr(d), 165);
-        doc.text(lines, 25, y);
-        y += lines.length * 4.5;
+    doc.text(`${f(price)} тг`,190,y,{align:'right'});
+    y+=5;
+    if(it.room){doc.setFontSize(9);doc.setTextColor(120,120,120);doc.text(it.room,20,y);y+=5;}
+    if(it.description&&it.description.length){
+      doc.setFontSize(9);doc.setTextColor(80,80,80);
+      it.description.slice(0,6).forEach(d=>{
+        if(y>268){doc.addPage();y=20;}
+        const lines=doc.splitTextToSize('• '+d,165);
+        doc.text(lines,25,y);y+=lines.length*4.5;
       });
     }
-
     if(it.note){
-      doc.setFontSize(8); doc.setTextColor(150,150,150);
-      const nl = doc.splitTextToSize(tr(it.note), 160);
-      doc.text(nl, 25, y); y += nl.length * 4 + 2;
+      doc.setFontSize(8);doc.setTextColor(150,150,150);
+      const nl=doc.splitTextToSize(it.note,160);
+      doc.text(nl,25,y);y+=nl.length*4+2;
     }
-
-    y += 3;
-    doc.setDrawColor(235,235,235);
-    doc.line(20, y, 190, y);
-    y += 6;
+    y+=3;doc.setDrawColor(235,235,235);doc.line(20,y,190,y);y+=6;
   });
 
-  if(y > 255){doc.addPage(); y = 20;}
-  y += 4;
-  doc.setFontSize(13); doc.setTextColor(40,40,40);
-  doc.text('Itogo:', 130, y);
-  doc.setTextColor(180,140,80);
-  doc.text(`${f(totPrice)} tg`, 190, y, {align:'right'});
-  y += 7;
-  doc.setFontSize(10); doc.setTextColor(120,120,120);
-  doc.text(`Predoplata 80%: ${f(totPrice*0.8)} tg`, 130, y);
-  y += 5;
-  doc.text(`Ostatok 20%: ${f(totPrice*0.2)} tg`, 130, y);
-  y += 12;
-  doc.setFontSize(8); doc.setTextColor(160,160,160);
-  doc.text('V stoimost vklyucheny: razrabotka chertezhey, proizvodstvo, dostavka, montazh, garantiya 3 goda.', 20, y);
-  doc.text('KP yavlyaetsya predvaritelnym. Okonchitelnaya stoimost posle kontrolnogo zamera.', 20, y+5);
+  if(y>255){doc.addPage();y=20;}
+  y+=4;
+  doc.setFontSize(13);doc.setTextColor(40,40,40);doc.text('Итого:',130,y);
+  doc.setTextColor(180,140,80);doc.text(`${f(totPrice)} тг`,190,y,{align:'right'});
+  y+=7;doc.setFontSize(10);doc.setTextColor(120,120,120);
+  doc.text(`Предоплата 80%: ${f(totPrice*.8)} тг`,130,y);
+  y+=5;doc.text(`Остаток 20%: ${f(totPrice*.2)} тг`,130,y);
+  y+=12;doc.setFontSize(8);doc.setTextColor(160,160,160);
+  doc.text('В стоимость включены: разработка чертежей, производство, доставка, монтаж, гарантия 3 года.',20,y);
+  doc.text('КП является предварительным. Окончательная стоимость после контрольного замера.',20,y+5);
 
-  doc.save(`KP_${tr(p.title)}_${new Date().toLocaleDateString('ru-RU').replace(/\./g,'-')}.pdf`);
-  await logAction('pdf_exported', {project: p.title});
+  doc.save(`КП_${p.title}_${new Date().toLocaleDateString('ru-RU').replace(/\./g,'-')}.pdf`);
+  await logAction('pdf_exported',{project:p.title});
 }
-// ─── UTILS ───────────────────────────────────────────────────────────────────
+
+async function exportVedomPDF(){
+  const {jsPDF}=window.jspdf;
+  const doc=new jsPDF({unit:'mm',format:'a4',putOnlyUsedFonts:true});
+  const p=currentProject;
+  const items=currentItems;
+  const f=n=>Math.round(n).toLocaleString('ru-RU');
+
+  const fontB64=await loadFont();
+  if(fontB64){
+    doc.addFileToVFS('NotoSans.ttf',fontB64);
+    doc.addFont('NotoSans.ttf','NotoSans','normal');
+    doc.setFont('NotoSans');
+  } else {
+    doc.setFont('helvetica');
+  }
+
+  doc.setFontSize(16);doc.setTextColor(40,40,40);
+  doc.text('Asia Home — Ведомость материалов',20,20);
+  doc.setFontSize(10);doc.setTextColor(120,120,120);
+  doc.text(`${p.title}${p.client?' · '+p.client:''}`,20,27);
+  doc.text(new Date().toLocaleDateString('ru-RU'),20,33);
+  doc.setDrawColor(220,220,220);doc.line(20,38,190,38);
+
+  const totals={};
+  MAT.forEach(f2=>{totals[f2.k]=items.reduce((s,it)=>s+(Number((it.materials||{})[f2.k])||0),0);});
+
+  let y=46;
+  doc.setFontSize(11);doc.setTextColor(40,40,40);
+  doc.text('Изделие',20,y);doc.text('Помещение',90,y);doc.text('Осн. материалы',140,y);
+  y+=2;doc.setDrawColor(180,180,180);doc.line(20,y,190,y);y+=6;
+
+  items.forEach((it,i)=>{
+    if(y>270){doc.addPage();y=20;}
+    const m=it.materials||{};
+    const mats=MAT.filter(f2=>Number(m[f2.k])>0).slice(0,3).map(f2=>`${f2.l}:${m[f2.k]}`).join(', ');
+    doc.setFontSize(9);doc.setTextColor(40,40,40);
+    doc.text(`${i+1}. ${it.name||'—'}`,20,y);
+    doc.text(it.room||'—',90,y);
+    doc.setTextColor(100,100,100);
+    const ml=doc.splitTextToSize(mats||'—',50);
+    doc.text(ml,140,y);
+    y+=ml.length*4+2;
+    doc.setDrawColor(240,240,240);doc.line(20,y,190,y);y+=4;
+  });
+
+  y+=6;
+  doc.setFontSize(12);doc.setTextColor(40,40,40);
+  doc.text('Сводная ведомость',20,y);y+=8;
+  doc.setFontSize(9);
+  doc.text('Материал',20,y);doc.text('Кол-во',120,y);doc.text('Ед.',155,y);doc.text('Сумма',170,y);
+  y+=2;doc.setDrawColor(180,180,180);doc.line(20,y,190,y);y+=5;
+
+  MAT.filter(f2=>totals[f2.k]>0).forEach(f2=>{
+    if(y>275){doc.addPage();y=20;}
+    doc.setTextColor(40,40,40);doc.text(f2.l,20,y);
+    doc.text(String(totals[f2.k]),120,y);
+    doc.setTextColor(100,100,100);doc.text(f2.u,155,y);
+    doc.text(f(totals[f2.k]*P[f2.k])+' тг',190,y,{align:'right'});
+    y+=5;
+  });
+
+  doc.save(`Ведомость_${p.title}_${new Date().toLocaleDateString('ru-RU').replace(/\./g,'-')}.pdf`);
+  await logAction('vedom_exported',{project:p.title});
+}
+
 function closeModal(){document.getElementById('modal').style.display='none';}
 </script>
 </body>
