@@ -949,89 +949,96 @@ async function savePassword(id) {
 // ─── PDF ЭКСПОРТ ──────────────────────────────────────────────────────────────
 async function exportPDF() {
   const {jsPDF} = window.jspdf;
-  const doc = new jsPDF({unit:'mm', format:'a4'});
+  const doc = new jsPDF({unit:'mm', format:'a4', putOnlyUsedFonts:true});
   const p = currentProject;
   const items = currentItems;
   const totPrice = items.reduce((s,it) => s + calcCost(it)*(it.kf||2.6), 0);
-  const fmt2 = n => Math.round(n).toLocaleString('ru-RU');
+  const f = n => Math.round(n).toLocaleString('ru-RU');
 
-  const fontUrl = 'https://fonts.gstatic.com/s/notosans/v36/o-0IIpQlx3QUlC5A4PNjThZVZNyBx2pqPIif.woff2';
-  try {
-    const fontResp = await fetch('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
-    const css = await fontResp.text();
-    const woffUrl = css.match(/url\(([^)]+woff2[^)]*)\)/)?.[1];
-    if(woffUrl){
-      const fontBuf = await (await fetch(woffUrl)).arrayBuffer();
-      const fontB64 = btoa(String.fromCharCode(...new Uint8Array(fontBuf)));
-      doc.addFileToVFS('NotoSans.ttf', fontB64);
-      doc.addFont('NotoSans.ttf', 'NotoSans', 'normal');
-      doc.setFont('NotoSans');
-    }
-  } catch(e) { console.log('font err',e); doc.setFont('helvetica'); }
+  // Транслитерация кириллицы
+  const cyr = {
+    'а':'a','б':'b','в':'v','г':'g','д':'d','е':'e','ё':'yo','ж':'zh','з':'z',
+    'и':'i','й':'y','к':'k','л':'l','м':'m','н':'n','о':'o','п':'p','р':'r',
+    'с':'s','т':'t','у':'u','ф':'f','х':'kh','ц':'ts','ч':'ch','ш':'sh',
+    'щ':'shch','ъ':'','ы':'y','ь':'','э':'e','ю':'yu','я':'ya',
+    'А':'A','Б':'B','В':'V','Г':'G','Д':'D','Е':'E','Ё':'Yo','Ж':'Zh','З':'Z',
+    'И':'I','Й':'Y','К':'K','Л':'L','М':'M','Н':'N','О':'O','П':'P','Р':'R',
+    'С':'S','Т':'T','У':'U','Ф':'F','Х':'Kh','Ц':'Ts','Ч':'Ch','Ш':'Sh',
+    'Щ':'Shch','Ъ':'','Ы':'Y','Ь':'','Э':'E','Ю':'Yu','Я':'Ya'
+  };
+  const tr = s => (s||'').split('').map(c => cyr[c]||c).join('');
 
+  doc.setFont('helvetica');
+
+  // Шапка
   doc.setFontSize(20); doc.setTextColor(40,40,40);
   doc.text('Asia Home', 20, 22);
   doc.setFontSize(10); doc.setTextColor(120,120,120);
-  doc.text('Коммерческое предложение', 20, 29);
-  doc.text(`${p.title}${p.client?' · '+p.client:''}`, 20, 35);
-  doc.text(`${p.city||'Караганда'} · ${new Date().toLocaleDateString('ru-RU')}`, 20, 41);
+  doc.text('Kommercheskoe predlozhenie', 20, 29);
+  doc.text(tr(`${p.title}${p.client?' · '+p.client:''}`), 20, 35);
+  doc.text(tr(`${p.city||'Karaganda'} · ${new Date().toLocaleDateString('ru-RU')}`), 20, 41);
   doc.setDrawColor(220,220,220);
   doc.line(20, 46, 190, 46);
 
   let y = 54;
+
   items.forEach((it,i) => {
-    if(y>260){doc.addPage();y=20;}
-    const cost=calcCost(it);
-    const price=cost*(it.kf||2.6);
+    if(y > 260){doc.addPage(); y = 20;}
+    const cost = calcCost(it);
+    const price = cost * (it.kf||2.6);
+
     doc.setFontSize(11); doc.setTextColor(40,40,40);
-    doc.text(`${i+1}. ${it.name||'—'}`, 20, y);
+    doc.text(`${i+1}. ${tr(it.name||'—')}`, 20, y);
     doc.setTextColor(180,140,80);
-    doc.text(`${fmt2(price)} тг`, 190, y, {align:'right'});
-    y+=5;
+    doc.text(`${f(price)} tg`, 190, y, {align:'right'});
+    y += 5;
+
     if(it.room){
       doc.setFontSize(9); doc.setTextColor(120,120,120);
-      doc.text(it.room, 20, y); y+=5;
+      doc.text(tr(it.room), 20, y); y += 5;
     }
-    if(it.description&&it.description.length){
+
+    if(it.description && it.description.length){
       doc.setFontSize(9); doc.setTextColor(80,80,80);
-      it.description.slice(0,6).forEach(d=>{
-        if(y>268){doc.addPage();y=20;}
-        const lines=doc.splitTextToSize('• '+d, 165);
+      it.description.slice(0,6).forEach(d => {
+        if(y > 268){doc.addPage(); y = 20;}
+        const lines = doc.splitTextToSize('- '+tr(d), 165);
         doc.text(lines, 25, y);
-        y+=lines.length*4.5;
+        y += lines.length * 4.5;
       });
     }
+
     if(it.note){
       doc.setFontSize(8); doc.setTextColor(150,150,150);
-      const nl=doc.splitTextToSize(it.note, 160);
-      doc.text(nl, 25, y); y+=nl.length*4+2;
+      const nl = doc.splitTextToSize(tr(it.note), 160);
+      doc.text(nl, 25, y); y += nl.length * 4 + 2;
     }
-    y+=3;
+
+    y += 3;
     doc.setDrawColor(235,235,235);
-    doc.line(20,y,190,y);
-    y+=6;
+    doc.line(20, y, 190, y);
+    y += 6;
   });
 
-  if(y>255){doc.addPage();y=20;}
-  y+=4;
+  if(y > 255){doc.addPage(); y = 20;}
+  y += 4;
   doc.setFontSize(13); doc.setTextColor(40,40,40);
-  doc.text('Итого:', 130, y);
+  doc.text('Itogo:', 130, y);
   doc.setTextColor(180,140,80);
-  doc.text(`${fmt2(totPrice)} тг`, 190, y, {align:'right'});
-  y+=7;
+  doc.text(`${f(totPrice)} tg`, 190, y, {align:'right'});
+  y += 7;
   doc.setFontSize(10); doc.setTextColor(120,120,120);
-  doc.text(`Предоплата 80%: ${fmt2(totPrice*0.8)} тг`, 130, y);
-  y+=5;
-  doc.text(`Остаток 20%: ${fmt2(totPrice*0.2)} тг`, 130, y);
-  y+=12;
+  doc.text(`Predoplata 80%: ${f(totPrice*0.8)} tg`, 130, y);
+  y += 5;
+  doc.text(`Ostatok 20%: ${f(totPrice*0.2)} tg`, 130, y);
+  y += 12;
   doc.setFontSize(8); doc.setTextColor(160,160,160);
-  doc.text('В стоимость включены: разработка чертежей, производство, доставка, монтаж, гарантия 3 года.', 20, y);
-  doc.text('КП является предварительным. Окончательная стоимость после контрольного замера.', 20, y+5);
+  doc.text('V stoimost vklyucheny: razrabotka chertezhey, proizvodstvo, dostavka, montazh, garantiya 3 goda.', 20, y);
+  doc.text('KP yavlyaetsya predvaritelnym. Okonchitelnaya stoimost posle kontrolnogo zamera.', 20, y+5);
 
-  doc.save(`КП_${p.title}_${new Date().toLocaleDateString('ru-RU').replace(/\./g,'-')}.pdf`);
-  await logAction('pdf_exported',{project:p.title});
+  doc.save(`KP_${tr(p.title)}_${new Date().toLocaleDateString('ru-RU').replace(/\./g,'-')}.pdf`);
+  await logAction('pdf_exported', {project: p.title});
 }
-
 // ─── UTILS ───────────────────────────────────────────────────────────────────
 function closeModal(){document.getElementById('modal').style.display='none';}
 </script>
