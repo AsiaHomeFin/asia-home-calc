@@ -955,7 +955,7 @@ async function exportPDF() {
   const totPrice = items.reduce((s,it) => s + calcCost(it)*(it.kf||2.6), 0);
   const fmt2 = n => Math.round(n).toLocaleString('ru-RU');
 
-  const fontUrl = 'https://cdn.jsdelivr.net/npm/@fontsource/noto-sans@4.5.14/files/noto-sans-latin-ext-400-normal.woff2';
+  const fontUrl = 'https://fonts.gstatic.com/s/notosans/v36/o-0IIpQlx3QUlC5A4PNjThZVZNyBx2pqPIif.woff2';
   try {
     const fontResp = await fetch(fontUrl);
     const fontBuf = await fontResp.arrayBuffer();
